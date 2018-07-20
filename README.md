@@ -4,7 +4,7 @@
 
 ### Step 1: Link required files
 
-First and most important, the jQuery library needs to be included (no need to download - link directly from Google). Next, download the package from this site and link the bxSlider CSS file (for the theme) and the bxSlider Javascript file.
+First and most important, the jQuery library needs to be included (no need to download - link directly from Google). Next, download the package from this site and link the selectker CSS file and the selectker Javascript file.
 
 ```html
 <!-- jQuery library (served from Google) -->
@@ -17,7 +17,7 @@ First and most important, the jQuery library needs to be included (no need to do
 
 ### Step 2: Create HTML markup
 
-Create a `<ul class="bxslider">` element, with a `<li>` for each slide. Slides can contain images, video, or any other HTML content!
+Create a `<select id="selectSearchField">` element, with list of `<option>` elements to search.
 
 ```html
 <select id="selectSearchField">
@@ -28,7 +28,7 @@ Create a `<ul class="bxslider">` element, with a `<li>` for each slide. Slides c
 </select>
 ```
 
-### Step 3: Call the bxSlider
+### Step 3: Call the addSelectSearch
 
 Call .addSelectSearch() on `<select id="selectSearchField">`. Note that the call must be made inside of a $(document).ready() call, or the plugin will not work!
 
